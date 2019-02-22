@@ -8,6 +8,9 @@ final class CodeTest extends TestCase
     public function testDataDirectory(){
         $this->assertDirectoryExists('data');
     }
+    public function testCSVFileExists() {
+        $this->assertFileExists('data/data.csv');
+    }
 
     public function testSrcDirectory(){
         $this->assertDirectoryExists('src');
