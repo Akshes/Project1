@@ -6,6 +6,11 @@ use PHPUnit\Framework\TestCase;
 final class CodeTest extends TestCase
 {
     public function testDataDirectory(){
-        $this->assertDirectoryExists('data')
+        $this->assertDirectoryExists('data');
     }
+
+    public function testSrcDirectory(){
+        $this->assertDirectoryExists('src');
+    }
+
 }
