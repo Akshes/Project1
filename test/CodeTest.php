@@ -19,4 +19,14 @@ final class CodeTest extends TestCase
         $this->assertDirectoryExists('test');
     }
 
+    public function testReadCSVtoArrayExists(){
+        $this->assertTrue(
+            method_exists(File::class,'readCSVtoArray')
+        );
+    }
+    public function testReadCSVtoArray(){
+        $records =File::readCSVtoArray("data/data.csv");
+        print_r($records);
+    }
+
 }
