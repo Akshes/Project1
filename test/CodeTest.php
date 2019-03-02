@@ -21,12 +21,12 @@ final class CodeTest extends TestCase
 
     public function testReadCSVtoArrayExists(){
         $this->assertTrue(
-            method_exists(File::class,'readCSVtoArray')
-        );
+            method_exists(File::class,'readCSVtoArray');
     }
-    public function testReadCSVtoArray(){
-        $records =File::readCSVtoArray("data/data.csv");
-        print_r($records);
-    }
+    public function testReadCSVtoArray() {
 
+        $records = File::readCSVtoArray("data/data.csv",'Shoe');
+        print_r($records);
+
+    }
 }
