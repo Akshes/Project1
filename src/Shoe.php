@@ -17,7 +17,7 @@ abstract class Shoe
     {
 
     }
-    public function carColor() :array
+    public function shoeColor() :array
     {
         $array = [
             'one' => 'black',
