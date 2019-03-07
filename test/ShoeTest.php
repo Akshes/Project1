@@ -7,16 +7,17 @@ final class ShoeTest extends TestCase
 {
 
 
-    public function testArray() {
+    public function testArray()
+    {
 
 
         $shoe = new Nike();
 
-        $ShoeColors= $shoe->shoeColor();
+        $ShoeColors = $shoe->shoeColor();
         $this->assertArrayHasKey('one', $ShoeColors);
         $this->assertArrayHasKey('two', $ShoeColors);
         $this->assertArrayHasKey('three', $ShoeColors);
 
 
     }
-)
+}

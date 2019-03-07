@@ -22,9 +22,10 @@ abstract class Shoe
         $array = [
             'one' => 'black',
             'two' => 'blue',
-            'three'=> 'red'
+            'three' => 'red'
         ];
 
         return $array;
+    }
 }
 
